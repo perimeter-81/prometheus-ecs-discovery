@@ -8,4 +8,4 @@ FROM alpine:latest
 RUN apk --no-cache add ca-certificates
 COPY --from=0 /bin/prometheus-ecs-discovery /bin/
 #ENTRYPOINT ["prometheus-ecs-discovery"]
-ENTRYPOINT ["prometheus-ecs-discovery","-config.write-to","/mount/prometheus/efs/ecs_file_sd.yml"]
+#ENTRYPOINT ["prometheus-ecs-discovery","-config.write-to","/mount/prometheus/efs/ecs_file_sd.yml"]
